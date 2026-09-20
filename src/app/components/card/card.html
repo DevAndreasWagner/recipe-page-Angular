@@ -1,1 +1,62 @@
-<p>card works!</p>
+<div>
+    <section>
+
+
+        <img src="assets/images/image-omlette.jpeg" alt="">
+
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+        <span>
+            <h3>Preparation item</h3>
+            <ul>
+                <li>Total: {{prepTime[0]}}</li>
+                <li>Preparation: {{prepTime[1]}}</li>
+                <li>Cooking: {{prepTime[2]}}</li>
+            </ul>
+        </span>
+
+    </section>
+    <section>
+        <h2>Ingredients</h2>
+        <ul>
+            @for (item of ingredients; track $index) {
+                <li>{{item}}</li>
+            }
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <h2>Instructions</h2>
+        <ol>
+            @for (instr of instructions; track $index) {
+                <p>{{$index + 1}}.</p>
+                <p>{{instr.name}}</p>
+                <p>{{instr.text}}</p> 
+            }
+        </ol>
+    </section>
+        <hr>
+    <section>
+        <h2>Nutrition</h2>
+        <p>The table below shows nutritional values per serving witout the additional fillings.</p>
+        <span>
+            <p class="name">Calories</p>
+            <p class="value">277kcal</p>
+        </span>
+        <hr>
+        <span>
+            <p class="name">Carbs</p>
+            <p class="value">0g</p>
+        </span>
+        <hr>
+        <span>
+            <p class="name">Protein</p>
+            <p class="value">20g</p>
+        </span>
+        <hr>
+        <span>
+            <p class="name">Fat</p>
+            <p class="value">22g</p>
+        </span>
+    </section>
+</div>
