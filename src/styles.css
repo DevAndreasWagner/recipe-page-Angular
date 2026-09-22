@@ -19,9 +19,16 @@ h2 {
 h3 {
     color: var(--color-rose-800);
 }
+hr {
+    color: var(--color-stone-150);
+}
 
 p {
     color: var(--color-stone-600);
+}
+
+.inst-index {
+    color: var(--color-brown-800);
 }
 
 @font-face {

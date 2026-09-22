@@ -7,6 +7,25 @@
     color: var(--color-brown-800);
 }
 
-ul, li {
+li {
     color: var(--color-stone-600);
+}
+
+.list-1 {
+    color: var(--color-rose-800);
+}
+
+.list-2 {
+    color: var(--color-brown-800);
+}
+
+.nutrition-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.nutrition {
+    width: 100%;
+    padding: 0 0 0 2rem;
 }
