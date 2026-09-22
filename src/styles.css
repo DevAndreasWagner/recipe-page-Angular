@@ -4,34 +4,59 @@
 
 body {
     font-size: 16px;
+    font-family: 'Outfit';
+}
+
+h1 {
+    font-family: 'youngserif';
+}
+
+h2 {
+    font-family: 'youngserif';
+    color: var(--color-brown-800);
+}
+
+h3 {
+    color: var(--color-rose-800);
+}
+
+p {
+    color: var(--color-stone-600);
 }
 
 @font-face {
     font-family: 'youngserif';
-    font-size: 400;
+    font-weight: 400;
+    font-size: normal;
     src: url(../public/assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Outfit';
-    font-size: 400;
+    font-weight: 400;
+    font-size: normal;
     src: url(../public/assets/fonts/outfit/static/Outfit-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Outfit-Semi';
-    font-size: 600;
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: normal;
     src: url(../public/assets/fonts/outfit/static/Outfit-SemiBold.ttf);
 }
 
 @font-face {
-    font-family: 'Outfit-bold';
-    font-size: 700;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: normal;
     src: url(../public/assets/fonts/outfit/static/Outfit-Bold.ttf);
 }
 
 
 @theme {
+
+    --font-outfit: 'Outfit', sans-serif;
+    --font-youngserif: 'YoungSerig', serif;
 
     --color-white: hsl(0, 0%, 100%);
     --color-stone-100: hsl(30, 54%, 90%);

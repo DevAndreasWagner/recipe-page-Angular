@@ -1,23 +1,23 @@
-<div>
-    <section>
+<div class="bg-white w-4xl flex flex-col justify-center items-center p-[3rem] rounded-4xl">
+    <section class="flex flex-col justify-center items-center">
 
 
-        <img src="assets/images/image-omlette.jpeg" alt="">
+        <img class="bg-cover bg-center w-40 h-32 " src="assets/images/image-omlette.jpeg" alt="">
 
-        <h1>{{title}}</h1>
-        <p>{{description}}</p>
-        <span>
-            <h3>Preparation item</h3>
+        <h1 class="text-4xl">{{title}}</h1>
+        <p class="font-outfit ">{{description}}</p>
+        <span class="w-2xl bg-rose-50">
+            <h3 class="text-xl">Preparation item</h3>
             <ul>
-                <li>Total: {{prepTime[0]}}</li>
-                <li>Preparation: {{prepTime[1]}}</li>
-                <li>Cooking: {{prepTime[2]}}</li>
+                <li><b>Total:</b> {{prepTime[0]}}</li>
+                <li><b>Preparation</b>: {{prepTime[1]}}</li>
+                <li><b>Cooking:</b> {{prepTime[2]}}</li>
             </ul>
         </span>
 
     </section>
     <section>
-        <h2>Ingredients</h2>
+        <h2 class="text-2xl">Ingredients</h2>
         <ul>
             @for (item of ingredients; track $index) {
                 <li>{{item}}</li>
@@ -26,37 +26,37 @@
     </section>
     <hr>
     <section>
-        <h2>Instructions</h2>
+        <h2 class="text-2xl">Instructions</h2>
         <ol>
             @for (instr of instructions; track $index) {
-                <p>{{$index + 1}}.</p>
-                <p>{{instr.name}}</p>
+                <p class="font-bold">{{$index + 1}}.</p>
+                <p class=" font-bold">{{instr.name}}</p>
                 <p>{{instr.text}}</p> 
             }
         </ol>
     </section>
         <hr>
     <section>
-        <h2>Nutrition</h2>
+        <h2 class="text-2xl">Nutrition</h2>
         <p>The table below shows nutritional values per serving witout the additional fillings.</p>
         <span>
             <p class="name">Calories</p>
-            <p class="value">277kcal</p>
+            <p class="value font-bold">277kcal</p>
         </span>
         <hr>
         <span>
             <p class="name">Carbs</p>
-            <p class="value">0g</p>
+            <p class="value font-bold">0g</p>
         </span>
         <hr>
         <span>
             <p class="name">Protein</p>
-            <p class="value">20g</p>
+            <p class="value font-bold">20g</p>
         </span>
         <hr>
         <span>
             <p class="name">Fat</p>
-            <p class="value">22g</p>
+            <p class="value font-bold">22g</p>
         </span>
     </section>
 </div>
